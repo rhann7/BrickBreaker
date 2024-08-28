@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
 const brickColors = [
-  Color(0xFF4F2CFF),
-  Color(0xfff3722c),
-  Color(0xFF4F2CFF),
-  Color(0xfff3722c),
-  Color(0xFF4F2CFF),
-  Color(0xfff3722c),
-  Color(0xFF4F2CFF),
-  Color(0xfff3722c),
-  Color(0xFF4F2CFF),
-  Color(0xfff3722c),
+  Color(0xFFFF3A3A),
+  Color(0xFFFF7A32),
+  Color(0xFFFFEA2C),
+  Color(0xFFBDFF30),
+  Color(0xFF38FF45),
+  Color(0xFF2ED9FF),
+  Color(0xFF3239FF),
+  Color(0xFFBE33FF),
+  Color(0xFFFF38E1),
+  Color(0xFFFF3535),
 ];
 
 const gameWidth = 820.0;
