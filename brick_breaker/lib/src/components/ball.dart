@@ -61,7 +61,7 @@ class Ball extends CircleComponent with CollisionCallbacks, HasGameReference<Bri
     } else if (other is Bat) {
       velocity.y = -velocity.y;
       velocity.x = velocity.x + (position.x - other.position.x) / other.size.x * game.width * 0.3;
-      audioController.playSound('assets/sounds/pew2.mp3');
+      audioController.playSound('assets/sounds/pew1.mp3');
     } else if (other is Brick) {
       if (position.y < other.position.y - other.size.y / 2) {
         velocity.y = -velocity.y;
@@ -73,7 +73,7 @@ class Ball extends CircleComponent with CollisionCallbacks, HasGameReference<Bri
         velocity.x = -velocity.x;
       }
       velocity.setFrom(velocity * difficultyModifier);
-      audioController.playSound('assets/sounds/pew3.mp3');
+      audioController.playSound('assets/sounds/pew1.mp3');
     }
   }
 }

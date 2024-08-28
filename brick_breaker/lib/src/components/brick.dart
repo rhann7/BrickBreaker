@@ -32,7 +32,7 @@ class Brick extends RectangleComponent with CollisionCallbacks, HasGameReference
     removeFromParent();
     game.score.value++;
 
-    audioController.playSound('assets/sounds/pew3.mp3');
+    audioController.playSound('assets/sounds/pew1.mp3');
 
     if (game.world.children.query<Brick>().length == 1) {
       game.playState = PlayState.won;

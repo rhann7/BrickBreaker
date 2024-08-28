@@ -29,7 +29,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/music/looped-song.ogg
+    - assets/music/looped-song.mp3
     - assets/sounds/pew1.mp3
-    - assets/sounds/pew2.mp3
-    - assets/sounds/pew3.mp3
+    - assets/sounds/alarm.wav
+    - assets/sounds/lose.wav

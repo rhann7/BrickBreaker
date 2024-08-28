@@ -6,10 +6,10 @@ import 'package:flame/events.dart';
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:brick_breaker/audio/audio_controller.dart';
 
 import 'components/components.dart';
 import 'config.dart';
-import 'package:brick_breaker/audio/audio_controller.dart';
 
 enum PlayState { welcome, playing, gameOver, won }
 
@@ -17,6 +17,7 @@ class BrickBreaker extends FlameGame with HasCollisionDetection, KeyboardEvents,
   final AudioController audioController;
   late Ball ball;
   late List<Brick> bricks;
+  bool alertPlayed = false;
 
   BrickBreaker({required this.audioController})
       : super(
@@ -38,12 +39,20 @@ class BrickBreaker extends FlameGame with HasCollisionDetection, KeyboardEvents,
     switch (playState) {
       case PlayState.welcome:
       case PlayState.gameOver:
-      case PlayState.won:
+        audioController.stopSound();
+        audioController.stopMusic();
+        audioController.playSound('assets/sounds/lose.wav');
         overlays.add(playState.name);
+        break;
+      case PlayState.won:
+        audioController.stopSound();
+        overlays.add(playState.name);
+        break;
       case PlayState.playing:
         overlays.remove(PlayState.welcome.name);
         overlays.remove(PlayState.gameOver.name);
         overlays.remove(PlayState.won.name);
+        break;
     }
   }
 
@@ -70,6 +79,9 @@ class BrickBreaker extends FlameGame with HasCollisionDetection, KeyboardEvents,
 
   void startGame() {
     if (playState == PlayState.playing) return;
+
+    audioController.stopSound();
+    audioController.startMusic();
 
     world.removeAll(world.children.query<Ball>());
     world.removeAll(world.children.query<Bat>());
@@ -109,6 +121,20 @@ class BrickBreaker extends FlameGame with HasCollisionDetection, KeyboardEvents,
   }
 
   @override
+  void update(double dt) {
+    super.update(dt);
+
+    if (score.value > 35 && !alertPlayed) {
+      audioController.playLoopingSound('assets/sounds/alarm.wav');
+      alertPlayed = true;
+    }
+
+    if (playState == PlayState.gameOver || playState == PlayState.won) {
+      audioController.stopSound();
+    }
+  }
+
+  @override
   void onTap() {
     super.onTap();
     startGame();
@@ -122,11 +148,14 @@ class BrickBreaker extends FlameGame with HasCollisionDetection, KeyboardEvents,
     switch (event.logicalKey) {
       case LogicalKeyboardKey.arrowLeft:
         world.children.query<Bat>().first.moveBy(-batStep);
+        break;
       case LogicalKeyboardKey.arrowRight:
         world.children.query<Bat>().first.moveBy(batStep);
+        break;
       case LogicalKeyboardKey.space:
       case LogicalKeyboardKey.enter:
         startGame();
+        break;
     }
     return KeyEventResult.handled;
   }

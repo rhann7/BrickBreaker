@@ -7,8 +7,9 @@ class AudioController {
   static final Logger _log = Logger('AudioController');
 
   SoLoud? _soloud;
-
   SoundHandle? _musicHandle;
+  SoundHandle? _alarmHandle;
+  double musicVolume = 0.5;
 
   Future<void> initialize() async {
     _soloud = SoLoud.instance;
@@ -28,6 +29,24 @@ class AudioController {
     }
   }
 
+  Future<void> playLoopingSound(String assetKey) async {
+    try {
+      final source = await _soloud!.loadAsset(assetKey);
+      _alarmHandle = await _soloud!.play(source, looping: true);
+    } on SoLoudException catch (e) {
+      _log.severe("Cannot play looping sound '$assetKey' . Ignoring.", e);
+    }
+  }
+
+  Future<void> stopSound() async {
+    if (_alarmHandle != null && _soloud!.getIsValidVoiceHandle(_alarmHandle!)) {
+      await _soloud!.stop(_alarmHandle!);
+      _alarmHandle = null;
+    } else {
+      _log.info('No sound to stop');
+    }
+  }
+
   Future<void> startMusic() async {
     if (_musicHandle != null) {
       if (_soloud!.getIsValidVoiceHandle(_musicHandle!)) {
@@ -38,20 +57,15 @@ class AudioController {
 
     _log.info('Loading music');
     final musicSource = await _soloud!
-        .loadAsset('assets/music/looped-song.ogg', mode: LoadMode.disk);
+        .loadAsset('assets/music/looped-song.mp3', mode: LoadMode.disk);
     musicSource.allInstancesFinished.first.then((_) {
       _soloud!.disposeSource(musicSource);
       _log.info('Music source disposed');
       _musicHandle = null;
     });
 
-    _log.info('Playing music');
-    _musicHandle = await _soloud!.play(
-      musicSource,
-      volume: 0.6,
-      looping: true,
-      loopingStartAt: const Duration(seconds: 25, milliseconds: 43),
-    );
+     _log.info('Playing music');
+    _musicHandle = await _soloud!.play(musicSource, looping: true);
   }
 
   void fadeOutMusic() {
@@ -62,6 +76,13 @@ class AudioController {
     const length = Duration(seconds: 5);
     _soloud!.fadeVolume(_musicHandle!, 0, length);
     _soloud!.scheduleStop(_musicHandle!, length);
+  }
+
+  void stopMusic() {
+    if (_musicHandle != null && _soloud!.getIsValidVoiceHandle(_musicHandle!)) {
+      _soloud!.stop(_musicHandle!);
+      _log.info('Music stopped.');
+    }
   }
 
   void applyFilter() {

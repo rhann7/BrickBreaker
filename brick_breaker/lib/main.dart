@@ -6,7 +6,7 @@ import 'package:logging/logging.dart';
 
 import 'package:brick_breaker/src/widgets/game_app.dart';
 
-void main() {
+void main() async {
   Logger.root.level = kDebugMode ? Level.FINE : Level.INFO;
   Logger.root.onRecord.listen((record) {
     dev.log(
