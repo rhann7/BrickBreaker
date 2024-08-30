@@ -21,7 +21,7 @@ class Ball extends CircleComponent with CollisionCallbacks, HasGameReference<Bri
         anchor: Anchor.center,
         paint: Paint()
           ..color = const Color(0xff1e6091)
-          ..style = PaintingStyle.fill,
+          ..style = PaintingStyle.stroke,
         children: [CircleHitbox()]
       );
 
@@ -32,7 +32,7 @@ class Ball extends CircleComponent with CollisionCallbacks, HasGameReference<Bri
   @override
   void update(double dt) {
     super.update(dt);
-    position += velocity * dt; 
+    position += velocity * dt;
   }
 
   @override

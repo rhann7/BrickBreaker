@@ -10,6 +10,7 @@ class AudioController {
   SoundHandle? _musicHandle;
   SoundHandle? _alarmHandle;
   double musicVolume = 0.5;
+  double alarmVolume = 1;
 
   Future<void> initialize() async {
     _soloud = SoLoud.instance;
@@ -31,6 +32,11 @@ class AudioController {
 
   Future<void> playLoopingSound(String assetKey) async {
     try {
+      if (_alarmHandle != null && _soloud!.getIsValidVoiceHandle(_alarmHandle!)) {
+        _log.info('Alarm is already playing.');
+        return;
+      }
+
       final source = await _soloud!.loadAsset(assetKey);
       _alarmHandle = await _soloud!.play(source, looping: true);
     } on SoLoudException catch (e) {
@@ -38,12 +44,14 @@ class AudioController {
     }
   }
 
-  Future<void> stopSound() async {
+  Future<void> stopAlarm() async {
     if (_alarmHandle != null && _soloud!.getIsValidVoiceHandle(_alarmHandle!)) {
+      _log.info('Stopping alarm sound...');
       await _soloud!.stop(_alarmHandle!);
       _alarmHandle = null;
+      _log.info('Alarm sound stopped.');
     } else {
-      _log.info('No sound to stop');
+      _log.info('No valid alarm sound to stop or alarm already stopped.');
     }
   }
 
@@ -66,6 +74,7 @@ class AudioController {
 
      _log.info('Playing music');
     _musicHandle = await _soloud!.play(musicSource, looping: true);
+    _soloud!.setVolume(_musicHandle!, musicVolume);
   }
 
   void fadeOutMusic() {

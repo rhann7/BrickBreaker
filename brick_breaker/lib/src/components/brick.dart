@@ -23,21 +23,36 @@ class Brick extends RectangleComponent with CollisionCallbacks, HasGameReference
       );
 
   final AudioController audioController;
+  bool isFalling = false;
+  final double fallSpeed = 150;
 
   @override
   void onCollisionStart(
     Set<Vector2> intersectionPoints, PositionComponent other
   ) {
     super.onCollisionStart(intersectionPoints, other);
-    removeFromParent();
-    game.score.value++;
 
-    audioController.playSound('assets/sounds/pew1.mp3');
+    if (!isFalling) {
+      isFalling = true;
+      game.score.value++;
+      audioController.playSound('assets/sounds/pew1.mp3');
+    }
+  }
 
-    if (game.world.children.query<Brick>().length == 1) {
-      game.playState = PlayState.won;
-      game.world.removeAll(game.world.children.query<Ball>());
-      game.world.removeAll(game.world.children.query<Bat>());
+  @override
+  void update(double dt) {
+    super.update(dt);
+
+    if (isFalling) {
+      position.y += fallSpeed * dt;
+      if (position.y > game.size.y) {
+        removeFromParent();
+        if (game.world.children.query<Brick>().isEmpty) {
+          game.playState = PlayState.won;
+          game.world.removeAll(game.world.children.query<Ball>());
+          game.world.removeAll(game.world.children.query<Bat>());
+        }
+      }
     }
   }
 }
