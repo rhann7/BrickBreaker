@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{32F75A11-2B10-3BE2-A12A-EFEE0FD79485}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.20348.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>flutter_soloud_plugin</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\src\build\plugins\flutter_soloud\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">flutter_soloud_plugin.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">flutter_soloud_plugin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\src\build\plugins\flutter_soloud\Profile\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">flutter_soloud_plugin.dir\Profile\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">flutter_soloud_plugin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\src\build\plugins\flutter_soloud\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">flutter_soloud_plugin.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">flutter_soloud_plugin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\windows\..\src\soloud\include;C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\windows\..\src\soloud\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>"4100"</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_HAS_EXCEPTIONS=0;_DEBUG;FLUTTER_PLUGIN_IMPL;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WITH_NULL;WITH_WINMM;WITH_MINIAUDIO;MA_NO_PULSEAUDIO;CMAKE_INTDIR="Debug";flutter_soloud_plugin_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_HAS_EXCEPTIONS=0;FLUTTER_PLUGIN_IMPL;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WITH_NULL;WITH_WINMM;WITH_MINIAUDIO;MA_NO_PULSEAUDIO;CMAKE_INTDIR=\"Debug\";flutter_soloud_plugin_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\windows\..\src\soloud\include;C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\windows\..\src\soloud\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\windows\..\src\soloud\include;C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\windows\..\src\soloud\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/src/build/plugins/flutter_soloud/Debug/flutter_soloud_plugin.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/src/build/plugins/flutter_soloud/Debug/flutter_soloud_plugin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\windows\..\src\soloud\include;C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\windows\..\src\soloud\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>"4100"</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;FLUTTER_PLUGIN_IMPL;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WITH_NULL;WITH_WINMM;WITH_MINIAUDIO;MA_NO_PULSEAUDIO;CMAKE_INTDIR="Profile";flutter_soloud_plugin_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;FLUTTER_PLUGIN_IMPL;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WITH_NULL;WITH_WINMM;WITH_MINIAUDIO;MA_NO_PULSEAUDIO;CMAKE_INTDIR=\"Profile\";flutter_soloud_plugin_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\windows\..\src\soloud\include;C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\windows\..\src\soloud\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\windows\..\src\soloud\include;C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\windows\..\src\soloud\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/src/build/plugins/flutter_soloud/Profile/flutter_soloud_plugin.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/src/build/plugins/flutter_soloud/Profile/flutter_soloud_plugin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\windows\..\src\soloud\include;C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\windows\..\src\soloud\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>"4100"</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;FLUTTER_PLUGIN_IMPL;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WITH_NULL;WITH_WINMM;WITH_MINIAUDIO;MA_NO_PULSEAUDIO;CMAKE_INTDIR="Release";flutter_soloud_plugin_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;FLUTTER_PLUGIN_IMPL;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WITH_NULL;WITH_WINMM;WITH_MINIAUDIO;MA_NO_PULSEAUDIO;CMAKE_INTDIR=\"Release\";flutter_soloud_plugin_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\windows\..\src\soloud\include;C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\windows\..\src\soloud\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\windows\..\src\soloud\include;C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\windows\..\src\soloud\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/src/build/plugins/flutter_soloud/Release/flutter_soloud_plugin.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/src/build/plugins/flutter_soloud/Release/flutter_soloud_plugin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\windows\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/src/brick_breaker/windows/flutter/ephemeral/.plugin_symlinks/flutter_soloud/windows/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/src/brick_breaker/windows -BC:/src/build --check-stamp-file C:/src/build/plugins/flutter_soloud/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\contrib\cmake\OptionDependentOnPackage.cmake;C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\contrib\cmake\PrintOptionStatus.cmake;C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\windows\Configure.cmake;C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\windows\src.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\src\build\plugins\flutter_soloud\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Building Custom Rule C:/src/brick_breaker/windows/flutter/ephemeral/.plugin_symlinks/flutter_soloud/windows/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/src/brick_breaker/windows -BC:/src/build --check-stamp-file C:/src/build/plugins/flutter_soloud/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\contrib\cmake\OptionDependentOnPackage.cmake;C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\contrib\cmake\PrintOptionStatus.cmake;C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\windows\Configure.cmake;C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\windows\src.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\src\build\plugins\flutter_soloud\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/src/brick_breaker/windows/flutter/ephemeral/.plugin_symlinks/flutter_soloud/windows/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/src/brick_breaker/windows -BC:/src/build --check-stamp-file C:/src/build/plugins/flutter_soloud/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\contrib\cmake\OptionDependentOnPackage.cmake;C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\contrib\cmake\PrintOptionStatus.cmake;C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\windows\Configure.cmake;C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\windows\src.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\src\build\plugins\flutter_soloud\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\core\soloud.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\core\soloud_audiosource.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\core\soloud_bus.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\core\soloud_core_3d.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\core\soloud_core_basicops.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\core\soloud_core_faderops.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\core\soloud_core_filterops.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\core\soloud_core_getters.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\core\soloud_core_setters.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\core\soloud_core_voicegroup.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\core\soloud_core_voiceops.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\core\soloud_fader.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\core\soloud_fft.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\core\soloud_fft_lut.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\core\soloud_file.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\core\soloud_filter.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\core\soloud_misc.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\core\soloud_queue.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\core\soloud_thread.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\audiosource\ay\chipplayer.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\audiosource\ay\sndbuffer.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\audiosource\ay\sndchip.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\audiosource\ay\sndrender.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\audiosource\ay\soloud_ay.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\audiosource\monotone\soloud_monotone.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\audiosource\noise\soloud_noise.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\audiosource\sfxr\soloud_sfxr.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\audiosource\speech\darray.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\audiosource\speech\klatt.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\audiosource\speech\resonator.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\audiosource\speech\soloud_speech.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\audiosource\speech\tts.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\audiosource\tedsid\sid.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\audiosource\tedsid\soloud_tedsid.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\audiosource\tedsid\ted.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\audiosource\vic\soloud_vic.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\audiosource\vizsn\soloud_vizsn.cpp" />
+    <ClInclude Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\audiosource\wav\dr_flac.h" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\audiosource\wav\dr_impl.cpp" />
+    <ClInclude Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\audiosource\wav\dr_mp3.h" />
+    <ClInclude Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\audiosource\wav\dr_wav.h" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\audiosource\wav\soloud_wav.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\audiosource\wav\soloud_wavstream.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\audiosource\wav\stb_vorbis.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCpp</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">CompileAsCpp</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\backend\null\soloud_null.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\backend\winmm\soloud_winmm.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\backend\miniaudio\soloud_miniaudio.cpp" />
+    <ClInclude Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\backend\miniaudio\miniaudio.h" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\filter\soloud_bassboostfilter.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\filter\soloud_biquadresonantfilter.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\filter\soloud_dcremovalfilter.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\filter\soloud_echofilter.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\filter\soloud_eqfilter.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\filter\soloud_fftfilter.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\filter\soloud_flangerfilter.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\filter\soloud_freeverbfilter.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\filter\soloud_lofifilter.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\filter\soloud_robotizefilter.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\soloud\src\filter\soloud_waveshaperfilter.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\common.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\bindings.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\player.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\analyzer.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\bindings_capture.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\capture.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\synth\basic_wave.cpp" />
+    <ClCompile Include="C:\src\brick_breaker\windows\flutter\ephemeral\.plugin_symlinks\flutter_soloud\src\filters\filters.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\src\build\ZERO_CHECK.vcxproj">
+      <Project>{AA64E814-FBF5-36BE-A9EA-E641DD6CBE13}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

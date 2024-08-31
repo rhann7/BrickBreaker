@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "C:/src/brick_breaker/windows"
+    "cmake.sourceDirectory": "C:/src/brick_breaker/windows",
+    "java.configuration.updateBuildConfiguration": "interactive"
 }

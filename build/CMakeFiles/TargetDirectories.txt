@@ -1,0 +1,16 @@
+C:/src/build/CMakeFiles/INSTALL.dir
+C:/src/build/CMakeFiles/ALL_BUILD.dir
+C:/src/build/CMakeFiles/ZERO_CHECK.dir
+C:/src/build/flutter/CMakeFiles/flutter_wrapper_plugin.dir
+C:/src/build/flutter/CMakeFiles/flutter_wrapper_app.dir
+C:/src/build/flutter/CMakeFiles/flutter_assemble.dir
+C:/src/build/flutter/CMakeFiles/INSTALL.dir
+C:/src/build/runner/CMakeFiles/brick_breaker.dir
+C:/src/build/runner/CMakeFiles/INSTALL.dir
+C:/src/build/runner/CMakeFiles/ALL_BUILD.dir
+C:/src/build/plugins/audioplayers_windows/CMakeFiles/audioplayers_windows_plugin.dir
+C:/src/build/plugins/audioplayers_windows/CMakeFiles/INSTALL.dir
+C:/src/build/plugins/audioplayers_windows/CMakeFiles/ALL_BUILD.dir
+C:/src/build/plugins/flutter_soloud/CMakeFiles/flutter_soloud_plugin.dir
+C:/src/build/plugins/flutter_soloud/CMakeFiles/INSTALL.dir
+C:/src/build/plugins/flutter_soloud/CMakeFiles/ALL_BUILD.dir

@@ -1,0 +1,10 @@
+^C:\SRC\BUILD\_DEPS\NUGET-SUBBUILD\CMAKEFILES\D706015D8B9D6F4FF633679A05BBF7D5\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/src/build/_deps/nuget-subbuild -BC:/src/build/_deps/nuget-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/src/build/_deps/nuget-subbuild/nuget-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

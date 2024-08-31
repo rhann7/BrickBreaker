@@ -45,13 +45,15 @@ class AudioController {
   }
 
   Future<void> stopAlarm() async {
-    if (_alarmHandle != null && _soloud!.getIsValidVoiceHandle(_alarmHandle!)) {
+    if (_alarmHandle != null) {
       _log.info('Stopping alarm sound...');
-      await _soloud!.stop(_alarmHandle!);
+      try {
+        await _soloud!.stop(_alarmHandle!);
+      } catch (e) {
+        _log.severe('Error stopping alarm sound', e);
+      }
       _alarmHandle = null;
       _log.info('Alarm sound stopped.');
-    } else {
-      _log.info('No valid alarm sound to stop or alarm already stopped.');
     }
   }
 

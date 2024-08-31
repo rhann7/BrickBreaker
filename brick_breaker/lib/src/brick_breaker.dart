@@ -85,6 +85,7 @@ class BrickBreaker extends FlameGame with HasCollisionDetection, KeyboardEvents,
     if (playState == PlayState.playing) return;
 
     audioController.stopAlarm();
+    alertPlayed = false;
     audioController.startMusic();
 
     world.removeAll(world.children.query<Ball>());

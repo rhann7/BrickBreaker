@@ -1,0 +1,49 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/src/build/_deps/nuget-subbuild/CMakeFiles/nuget-populate"
+		},
+		{
+			"file" : "C:/src/build/_deps/nuget-subbuild/CMakeFiles/d706015d8b9d6f4ff633679a05bbf7d5/nuget-populate.rule"
+		},
+		{
+			"file" : "C:/src/build/_deps/nuget-subbuild/CMakeFiles/9e85a3ff31c00c58aadb8f175e97bffc/nuget-populate-complete.rule"
+		},
+		{
+			"file" : "C:/src/build/_deps/nuget-subbuild/CMakeFiles/882cc62e4876c7b4f18f4aa67f0fd354/nuget-populate-build.rule"
+		},
+		{
+			"file" : "C:/src/build/_deps/nuget-subbuild/CMakeFiles/882cc62e4876c7b4f18f4aa67f0fd354/nuget-populate-configure.rule"
+		},
+		{
+			"file" : "C:/src/build/_deps/nuget-subbuild/CMakeFiles/882cc62e4876c7b4f18f4aa67f0fd354/nuget-populate-copyfile.rule"
+		},
+		{
+			"file" : "C:/src/build/_deps/nuget-subbuild/CMakeFiles/882cc62e4876c7b4f18f4aa67f0fd354/nuget-populate-download.rule"
+		},
+		{
+			"file" : "C:/src/build/_deps/nuget-subbuild/CMakeFiles/882cc62e4876c7b4f18f4aa67f0fd354/nuget-populate-install.rule"
+		},
+		{
+			"file" : "C:/src/build/_deps/nuget-subbuild/CMakeFiles/882cc62e4876c7b4f18f4aa67f0fd354/nuget-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/src/build/_deps/nuget-subbuild/CMakeFiles/882cc62e4876c7b4f18f4aa67f0fd354/nuget-populate-patch.rule"
+		},
+		{
+			"file" : "C:/src/build/_deps/nuget-subbuild/CMakeFiles/882cc62e4876c7b4f18f4aa67f0fd354/nuget-populate-test.rule"
+		},
+		{
+			"file" : "C:/src/build/_deps/nuget-subbuild/CMakeFiles/882cc62e4876c7b4f18f4aa67f0fd354/nuget-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"nuget-populate"
+		],
+		"name" : "nuget-populate"
+	}
+}
