@@ -39,12 +39,10 @@ class BrickBreaker extends FlameGame with HasCollisionDetection, KeyboardEvents,
     switch (playState) {
       case PlayState.welcome:
         audioController.stopAlarm();
-        audioController.stopMusic();
         overlays.add(playState.name);
         break;
       case PlayState.gameOver:
         audioController.stopAlarm();
-        audioController.stopMusic();
         audioController.playSound('assets/sounds/lose.wav');
         overlays.add(playState.name);
         break;
