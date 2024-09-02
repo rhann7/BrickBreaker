@@ -9,8 +9,8 @@ class AudioController {
   SoLoud? _soloud;
   SoundHandle? _musicHandle;
   SoundHandle? _alarmHandle;
-  double musicVolume = 0.5;
-  double alarmVolume = 1;
+  double musicVolume = .5;
+  double alarmVolume = .7;
 
   Future<void> initialize() async {
     _soloud = SoLoud.instance;
@@ -30,7 +30,7 @@ class AudioController {
     }
   }
 
-  Future<void> playLoopingSound(String assetKey) async {
+  Future<void> playLoopingAlarm(String assetKey) async {
     try {
       if (_alarmHandle != null && _soloud!.getIsValidVoiceHandle(_alarmHandle!)) {
         _log.info('Alarm is already playing.');
@@ -45,15 +45,16 @@ class AudioController {
   }
 
   Future<void> stopAlarm() async {
-    if (_alarmHandle != null) {
-      _log.info('Stopping alarm sound...');
-      try {
+    try {
+      if (_alarmHandle != null && _soloud!.getIsValidVoiceHandle(_alarmHandle!)) {
         await _soloud!.stop(_alarmHandle!);
-      } catch (e) {
-        _log.severe('Error stopping alarm sound', e);
+        _alarmHandle = null;
+        _log.info('Alarm stopped successfully.');
+      } else {
+        _log.info('No valid alarm handle to stop.');
       }
-      _alarmHandle = null;
-      _log.info('Alarm sound stopped.');
+    } on SoLoudException catch (e) {
+      _log.severe("Cannot stop sound. Ignoring.", e);
     }
   }
 

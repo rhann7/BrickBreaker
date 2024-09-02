@@ -42,8 +42,8 @@ class BrickBreaker extends FlameGame with HasCollisionDetection, KeyboardEvents,
         overlays.add(playState.name);
         break;
       case PlayState.gameOver:
-        audioController.stopAlarm();
         audioController.playSound('assets/sounds/lose.wav');
+        audioController.stopAlarm();
         overlays.add(playState.name);
         break;
       case PlayState.won:
@@ -91,7 +91,7 @@ class BrickBreaker extends FlameGame with HasCollisionDetection, KeyboardEvents,
     world.removeAll(world.children.query<Brick>());
 
     playState = PlayState.playing;
-    score.value = 35;
+    score.value = 0;
 
     world.add(Ball(
       difficultyModifier: difficultyModifier,
@@ -127,12 +127,12 @@ class BrickBreaker extends FlameGame with HasCollisionDetection, KeyboardEvents,
   void update(double dt) {
     super.update(dt);
 
-    if (score.value > 35 && !alertPlayed) {
-      audioController.playLoopingSound('assets/sounds/alarm.wav');
+    if (score.value >= 35 && !alertPlayed) {
+      audioController.playLoopingAlarm('assets/sounds/alarm.wav');
       alertPlayed = true;
     }
 
-    if (playState == PlayState.gameOver || playState == PlayState.won) {
+    if ((playState == PlayState.gameOver || playState == PlayState.won) && alertPlayed) {
       audioController.stopAlarm();
       alertPlayed = false;
     }
