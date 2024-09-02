@@ -9,7 +9,7 @@ class AudioController {
   SoLoud? _soloud;
   SoundHandle? _musicHandle;
   SoundHandle? _alarmHandle;
-  double musicVolume = .5;
+  double musicVolume = .3;
   double alarmVolume = .7;
 
   Future<void> initialize() async {

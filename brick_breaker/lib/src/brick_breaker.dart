@@ -102,13 +102,7 @@ class BrickBreaker extends FlameGame with HasCollisionDetection, KeyboardEvents,
         ..scale(height / 4),
       audioController: audioController,
     ));
-
-    world.add(Bat(
-      size: Vector2(batWidth, batHeight),
-      cornerRadius: const Radius.circular(ballRadius / 2),
-      position: Vector2(width / 2, height * 0.8)
-    ));
-
+    
     world.addAll([
       for (var i = 0; i < brickColors.length; i++)
         for (var j = 1; j <= 5; j++)
@@ -121,6 +115,12 @@ class BrickBreaker extends FlameGame with HasCollisionDetection, KeyboardEvents,
             audioController: audioController,
           ),
     ]);
+
+    world.add(Bat(
+      size: Vector2(batWidth, batHeight),
+      cornerRadius: const Radius.circular(ballRadius / 2),
+      position: Vector2(width / 2, height * 0.8)
+    ));
   }
 
   @override
