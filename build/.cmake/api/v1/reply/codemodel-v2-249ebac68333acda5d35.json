@@ -163,14 +163,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ALL_BUILD-Debug-b28a38785f18f41bad18.json",
+					"jsonFile" : "target-ALL_BUILD-Debug-579029247441324ce003.json",
 					"name" : "ALL_BUILD",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "ALL_BUILD::@056c4f61b0156d1d9b06",
-					"jsonFile" : "target-ALL_BUILD-Debug-2a8f129c19cb05eaa668.json",
+					"jsonFile" : "target-ALL_BUILD-Debug-9b6fd2bdc8e92e04ded4.json",
 					"name" : "ALL_BUILD",
 					"projectIndex" : 1
 				},
@@ -184,7 +184,7 @@
 				{
 					"directoryIndex" : 4,
 					"id" : "ALL_BUILD::@0a000e010370ee1cbb9e",
-					"jsonFile" : "target-ALL_BUILD-Debug-a96819c59e9004519e40.json",
+					"jsonFile" : "target-ALL_BUILD-Debug-cf1b787e3d5520d6104b.json",
 					"name" : "ALL_BUILD",
 					"projectIndex" : 3
 				},
@@ -198,14 +198,14 @@
 				{
 					"directoryIndex" : 3,
 					"id" : "audioplayers_windows_plugin::@6f00b843ae6f76675cd2",
-					"jsonFile" : "target-audioplayers_windows_plugin-Debug-ee070d18731cada61e36.json",
+					"jsonFile" : "target-audioplayers_windows_plugin-Debug-817efa084c3ca647b932.json",
 					"name" : "audioplayers_windows_plugin",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "brick_breaker::@056c4f61b0156d1d9b06",
-					"jsonFile" : "target-brick_breaker-Debug-63b1b46d4828f591d9b3.json",
+					"jsonFile" : "target-brick_breaker-Debug-9014cbf5215b1f39e88b.json",
 					"name" : "brick_breaker",
 					"projectIndex" : 1
 				},
@@ -401,14 +401,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ALL_BUILD-Profile-b28a38785f18f41bad18.json",
+					"jsonFile" : "target-ALL_BUILD-Profile-579029247441324ce003.json",
 					"name" : "ALL_BUILD",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "ALL_BUILD::@056c4f61b0156d1d9b06",
-					"jsonFile" : "target-ALL_BUILD-Profile-2a8f129c19cb05eaa668.json",
+					"jsonFile" : "target-ALL_BUILD-Profile-9b6fd2bdc8e92e04ded4.json",
 					"name" : "ALL_BUILD",
 					"projectIndex" : 1
 				},
@@ -422,7 +422,7 @@
 				{
 					"directoryIndex" : 4,
 					"id" : "ALL_BUILD::@0a000e010370ee1cbb9e",
-					"jsonFile" : "target-ALL_BUILD-Profile-a96819c59e9004519e40.json",
+					"jsonFile" : "target-ALL_BUILD-Profile-cf1b787e3d5520d6104b.json",
 					"name" : "ALL_BUILD",
 					"projectIndex" : 3
 				},
@@ -436,14 +436,14 @@
 				{
 					"directoryIndex" : 3,
 					"id" : "audioplayers_windows_plugin::@6f00b843ae6f76675cd2",
-					"jsonFile" : "target-audioplayers_windows_plugin-Profile-605ddc838942ab2388af.json",
+					"jsonFile" : "target-audioplayers_windows_plugin-Profile-2c59e229626990da62a4.json",
 					"name" : "audioplayers_windows_plugin",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "brick_breaker::@056c4f61b0156d1d9b06",
-					"jsonFile" : "target-brick_breaker-Profile-789ff92a03022c222e22.json",
+					"jsonFile" : "target-brick_breaker-Profile-0b92a27393419be6badd.json",
 					"name" : "brick_breaker",
 					"projectIndex" : 1
 				},
@@ -639,14 +639,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ALL_BUILD-Release-b28a38785f18f41bad18.json",
+					"jsonFile" : "target-ALL_BUILD-Release-579029247441324ce003.json",
 					"name" : "ALL_BUILD",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "ALL_BUILD::@056c4f61b0156d1d9b06",
-					"jsonFile" : "target-ALL_BUILD-Release-2a8f129c19cb05eaa668.json",
+					"jsonFile" : "target-ALL_BUILD-Release-9b6fd2bdc8e92e04ded4.json",
 					"name" : "ALL_BUILD",
 					"projectIndex" : 1
 				},
@@ -660,7 +660,7 @@
 				{
 					"directoryIndex" : 4,
 					"id" : "ALL_BUILD::@0a000e010370ee1cbb9e",
-					"jsonFile" : "target-ALL_BUILD-Release-a96819c59e9004519e40.json",
+					"jsonFile" : "target-ALL_BUILD-Release-cf1b787e3d5520d6104b.json",
 					"name" : "ALL_BUILD",
 					"projectIndex" : 3
 				},
@@ -674,14 +674,14 @@
 				{
 					"directoryIndex" : 3,
 					"id" : "audioplayers_windows_plugin::@6f00b843ae6f76675cd2",
-					"jsonFile" : "target-audioplayers_windows_plugin-Release-9bd1c11634dc7260dbbb.json",
+					"jsonFile" : "target-audioplayers_windows_plugin-Release-4e5145e714ef17f72088.json",
 					"name" : "audioplayers_windows_plugin",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "brick_breaker::@056c4f61b0156d1d9b06",
-					"jsonFile" : "target-brick_breaker-Release-47c8ee54b56346d122af.json",
+					"jsonFile" : "target-brick_breaker-Release-ef66784bc709e90dcc14.json",
 					"name" : "brick_breaker",
 					"projectIndex" : 1
 				},

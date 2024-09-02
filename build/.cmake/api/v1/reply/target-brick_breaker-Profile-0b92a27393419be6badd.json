@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "runner/Release/brick_breaker.exe"
+			"path" : "runner/Profile/brick_breaker.exe"
 		},
 		{
-			"path" : "runner/Release/brick_breaker.pdb"
+			"path" : "runner/Profile/brick_breaker.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -351,12 +351,12 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 11,
-			"id" : "flutter_assemble::@2bb09fbb03a373b2cb34"
-		},
-		{
 			"backtrace" : 4,
 			"id" : "flutter_wrapper_app::@2bb09fbb03a373b2cb34"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "flutter_assemble::@2bb09fbb03a373b2cb34"
 		},
 		{
 			"backtrace" : 8,
@@ -373,7 +373,7 @@
 		[
 			{
 				"backtrace" : 3,
-				"path" : "C:/src/build/runner/Release"
+				"path" : "C:/src/build/runner/Profile"
 			}
 		],
 		"prefix" : 
@@ -395,7 +395,7 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "..\\flutter\\Release\\flutter_wrapper_app.lib",
+				"fragment" : "..\\flutter\\Profile\\flutter_wrapper_app.lib",
 				"role" : "libraries"
 			},
 			{
@@ -405,7 +405,7 @@
 			},
 			{
 				"backtrace" : 8,
-				"fragment" : "..\\plugins\\audioplayers_windows\\Release\\audioplayers_windows_plugin.lib",
+				"fragment" : "..\\plugins\\audioplayers_windows\\Profile\\audioplayers_windows_plugin.lib",
 				"role" : "libraries"
 			},
 			{

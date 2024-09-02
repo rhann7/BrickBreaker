@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "runner/Debug/brick_breaker.exe"
+			"path" : "runner/Release/brick_breaker.exe"
 		},
 		{
-			"path" : "runner/Debug/brick_breaker.pdb"
+			"path" : "runner/Release/brick_breaker.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -158,12 +158,6 @@
 			{
 				"command" : 7,
 				"file" : 1,
-				"line" : 45,
-				"parent" : 12
-			},
-			{
-				"command" : 7,
-				"file" : 1,
 				"line" : 44,
 				"parent" : 12
 			},
@@ -187,7 +181,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++17"
 				},
 				{
 					"backtrace" : 13,
@@ -238,10 +232,6 @@
 				},
 				{
 					"backtrace" : 22,
-					"define" : "_DEBUG"
-				},
-				{
-					"backtrace" : 23,
 					"define" : "_HAS_EXCEPTIONS=0"
 				},
 				{
@@ -252,7 +242,7 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 24,
+					"backtrace" : 23,
 					"path" : "C:/src/brick_breaker/windows"
 				},
 				{
@@ -273,7 +263,7 @@
 			{
 				"backtraces" : 
 				[
-					25
+					24
 				],
 				"standard" : "17"
 			},
@@ -290,7 +280,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-DWIN32 -D_DEBUG"
+					"fragment" : "-DWIN32"
 				}
 			],
 			"defines" : 
@@ -325,10 +315,6 @@
 				},
 				{
 					"backtrace" : 22,
-					"define" : "_DEBUG"
-				},
-				{
-					"backtrace" : 23,
 					"define" : "_HAS_EXCEPTIONS=0"
 				},
 				{
@@ -339,7 +325,7 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 24,
+					"backtrace" : 23,
 					"path" : "C:/src/brick_breaker/windows"
 				},
 				{
@@ -365,12 +351,12 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 11,
-			"id" : "flutter_assemble::@2bb09fbb03a373b2cb34"
-		},
-		{
 			"backtrace" : 4,
 			"id" : "flutter_wrapper_app::@2bb09fbb03a373b2cb34"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "flutter_assemble::@2bb09fbb03a373b2cb34"
 		},
 		{
 			"backtrace" : 8,
@@ -387,7 +373,7 @@
 		[
 			{
 				"backtrace" : 3,
-				"path" : "C:/src/build/runner/Debug"
+				"path" : "C:/src/build/runner/Release"
 			}
 		],
 		"prefix" : 
@@ -400,16 +386,16 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1",
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:windows",
+				"fragment" : "/machine:x64 /INCREMENTAL:NO /subsystem:windows",
 				"role" : "flags"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "..\\flutter\\Debug\\flutter_wrapper_app.lib",
+				"fragment" : "..\\flutter\\Release\\flutter_wrapper_app.lib",
 				"role" : "libraries"
 			},
 			{
@@ -419,7 +405,7 @@
 			},
 			{
 				"backtrace" : 8,
-				"fragment" : "..\\plugins\\audioplayers_windows\\Debug\\audioplayers_windows_plugin.lib",
+				"fragment" : "..\\plugins\\audioplayers_windows\\Release\\audioplayers_windows_plugin.lib",
 				"role" : "libraries"
 			},
 			{
