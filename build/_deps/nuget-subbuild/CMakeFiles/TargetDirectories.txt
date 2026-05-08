@@ -1,3 +1,0 @@
-C:/src/build/_deps/nuget-subbuild/CMakeFiles/nuget-populate.dir
-C:/src/build/_deps/nuget-subbuild/CMakeFiles/ALL_BUILD.dir
-C:/src/build/_deps/nuget-subbuild/CMakeFiles/ZERO_CHECK.dir

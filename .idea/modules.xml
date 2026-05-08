@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/src.iml" filepath="$PROJECT_DIR$/.idea/src.iml" />
+      <module fileurl="file://$PROJECT_DIR$/brick_breaker.iml" filepath="$PROJECT_DIR$/brick_breaker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/brick_breaker_android.iml" filepath="$PROJECT_DIR$/android/brick_breaker_android.iml" />
     </modules>
   </component>
 </project>
